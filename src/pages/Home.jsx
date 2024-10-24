@@ -7,7 +7,7 @@ export default function Home() {
     const handleSumbit = async ()=> {
         setIsLoading(true);
         try{
-            const req = await fetch('http://localhost:3000/enhance', {
+            const req = await fetch('https://enhance-prompt-back.vercel.app/enhance', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
